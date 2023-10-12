@@ -2,10 +2,12 @@
 #include "main.h"
 
 /**
- * main - Enty point of application.
+ * add - adds two integers and returns the result.
+ * @num1: first integer.
+ * @num2: second integer.
  *
- * Description: Runs a program to print the sum of two integers.
- * Return: 0 (Success)
+ * Description: Adds two integers and returns the result.
+ * Return: the sum of adding the two integer arguments.
  */
 int add(int num1, int num2)
 {
