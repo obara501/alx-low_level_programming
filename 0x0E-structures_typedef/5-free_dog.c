@@ -1,15 +1,17 @@
 #include <stdlib.h>
-#include <stddef.h>
 #include "dog.h"
 
+
 /**
-* free_dog - Deallocates memory from a dog struct
-* @d: A pointer to a dog struct
-*
-* Return:void
+* free_dog - frees memory allocated for a struct dog
+* @d: struct dog to free
 */
 void free_dog(dog_t *d)
 {
-	free(d->name);
-	free(d->owner);
+	if (d)
+	{
+		free(d->name);
+		free(d->owner);
+		free(d);
+	}
 }
