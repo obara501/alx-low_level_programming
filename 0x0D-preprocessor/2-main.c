@@ -1,9 +1,10 @@
 #include <stdio.h>
+
 /**
- * main - prints the name of the file
- *
- * Return: Always 0 (Success)
- */
+* main - run the application
+*
+* Return: Always 0, otherwise error
+*/
 int ain(void)
 {
 	printf("%s\n", __FILE__);
